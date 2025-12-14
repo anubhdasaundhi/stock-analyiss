@@ -1,0 +1,69 @@
+i have 50 yaml files places in the folder i have convert that file to excel
+
+import all te library 
+import os
+import yaml
+import pandas as pd
+import csv
+import mysql.connector
+from datetime import date
+from mysql.connector import Error
+from datetime import datetime
+
+take the path wehre base file,sector file ,out file ,master all combined file should be going
+
+
+*** load the symbol from the file extract the ticketr from the country convert it to string this helps to joint easily fetch the data 
+
+after that map the fuction  genrating the csv airtel  and bharti airtel are not coming when we run the code only 4 are missing for the symbol name is not matching
+ so i have change the name for the 
+mapping
+ioc is availble but there are no data for the ioc 
+then final have the symbol list
+then create the rows for the collect list
+read yml file and collect data  then wirte all csv file as sper ticketr
+
+then combined the all files together then load that file to this path csv_path = r"C:\Users\Manish Computers\Downloads\all_tickers_combined.csv"
+the make them in order and create database stock in which all  and connect to the data base sql then fetch data to sql in the database name stock table by this way we can understand the whole
+life cycle.
+
+
+
+
+############# extraction file ended############### 
+
+import streamlit as st
+import pandas as pd
+import numpy as np
+import mysql.connector
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+all the excel which i can use for the streamlit dashboard
+
+def get_connection():
+    return mysql.connector.connect(
+        host="localhost",
+        user="bankONE",
+        password="0701",
+        database="stock"
+    ) this help to connect the dashboard with the  streamlit
+##then we can load data at sql.
+
+after that streatmlit streamlit dashboard start then there is a side bar navigation which which will help me
+where you can go on the
+
+"🏦 Market Overview",
+        "📉 Volatility Analysis",
+        "📈 Returns Analysis",
+        "📈 Cumulative Return Over Time",
+        "🏭 Sector-wise Performance",
+        "📊 Stock Price Correlation Heatmap",
+        "📅 Month-wise Top 5 Gainers & Losers",
+        "🏭 Sector Performance (Alternate Dashboard)"
+    ]pages 
+
+after that all the dashboard are completed
+
+
+ 
